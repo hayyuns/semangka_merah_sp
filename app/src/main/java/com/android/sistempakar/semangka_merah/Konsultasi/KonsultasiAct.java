@@ -146,7 +146,7 @@ public class KonsultasiAct extends AppCompatActivity {
 
         if (kode_main.equals("P001")){
 
-            nilai = arrDiagnosa.size() / 4.0d * 100.0d;
+            nilai = arrDiagnosa.size() / 16.0d * 100.0d;
             System.out.println(String.valueOf(nilai));
             Intent intent = new Intent(getApplicationContext(), hasil_deteksi.class);
             intent.putExtra("persen", String.format("%.2f", nilai)+"%");
@@ -156,7 +156,7 @@ public class KonsultasiAct extends AppCompatActivity {
             return;
         }if (kode_main.equals("P002")){
 
-            nilai = arrDiagnosa.size() / 3.0d * 100.0d;
+            nilai = arrDiagnosa.size() / 16.0d * 100.0d;
             System.out.println(String.valueOf(nilai));
             Intent intent = new Intent(getApplicationContext(), hasil_deteksi.class);
             intent.putExtra("persen", String.format("%.2f", nilai)+"%");
@@ -166,7 +166,7 @@ public class KonsultasiAct extends AppCompatActivity {
             return;
         }if (kode_main.equals("P003")){
 
-            nilai = arrDiagnosa.size() / 4.0d * 100.0d;
+            nilai = arrDiagnosa.size() / 16.0d * 100.0d;
             System.out.println(String.valueOf(nilai));
             Intent intent = new Intent(getApplicationContext(), hasil_deteksi.class);
             intent.putExtra("persen", String.format("%.2f", nilai)+"%");
@@ -177,7 +177,7 @@ public class KonsultasiAct extends AppCompatActivity {
         }
         if (kode_main.equals("P004")){
 
-        nilai = arrDiagnosa.size() / 4.0d * 100.0d;
+        nilai = arrDiagnosa.size() / 16.0d * 100.0d;
         System.out.println(String.valueOf(nilai));
         Intent intent = new Intent(getApplicationContext(), hasil_deteksi.class);
         intent.putExtra("persen", String.format("%.2f", nilai)+"%");
@@ -188,7 +188,7 @@ public class KonsultasiAct extends AppCompatActivity {
         }
         if (kode_main.equals("P005")){
 
-            nilai = arrDiagnosa.size() / 5.0d * 100.0d;
+            nilai = arrDiagnosa.size() / 16.0d * 100.0d;
             System.out.println(String.valueOf(nilai));
             Intent intent = new Intent(getApplicationContext(), hasil_deteksi.class);
             intent.putExtra("persen", String.format("%.2f", nilai)+"%");
@@ -394,7 +394,7 @@ public class KonsultasiAct extends AppCompatActivity {
         data.setYa(kode_ya);
         radioGroup.clearCheck();
         data.setTidak(kode_tidak);
-        gejala.setText("Apakah kelinci anda mengalami\n" + data.getDiagnosa() + "?");
+        gejala.setText("Apakah Semangka anda mengalami\n" + data.getDiagnosa() + "?");
         radioButton_ya.invalidate();
         radioButton_tidak.invalidate();
     }
